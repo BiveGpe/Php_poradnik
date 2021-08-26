@@ -1,3 +1,12 @@
+<?php
+     session_start(); // Funkcja startująca sesje
+
+     if(isset($_POST['imie'])) // Sprawdzenie czy formularz został wypełniony
+     { 
+         $_SESSION['user'] = $_POST['imie']; // Dodanie klucza user => imie do tablicy _SESSION
+     }
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -13,17 +22,19 @@
 
      <form action="sesja.php" method="post">
          <p>Imie: <input type="text" name="imie" id=""></p>
-         <p>Nazwisko: <input type="text" name="nazwisko" id=""></p>
          <input type="submit" value="Klik">
-     </form>
+     </form><br>
 
      <?php
-         if(isset($_POST['imie']) && isset($_POST['nazwisko']))
+         if(isset($_SESSION['user']))
          { 
-             echo "siusiak";
-
+             echo "Twoje imie: " . $_SESSION['user'] . "<br>";
+         }
+         else
+         {
+             echo "Wypełnij formularz<br>";
          }
      ?>
-     <a href="index.html">wróć</a>
+     <a href="index.html"><br>wróć</a>
     </body>
 </html>
