@@ -8,8 +8,21 @@
          <title>Sesja</title>
     </head>
     <body>
-        <h1>Sesja</h1>
-        <h3>Form</h3>
-        <a href="index.html">wróć</a>
+     <h1>Sesja</h1>
+     <h3>Form</h3>
+
+     <form action="sesja.php" method="post">
+         <p>Imie: <input type="text" name="imie" id=""></p>
+         <p>Nazwisko: <input type="text" name="nazwisko" id=""></p>
+         <input type="submit" value="Klik">
+     </form>
+
+     <?php
+         if(isset($_POST['imie']) && isset($_POST['nazwisko']))
+         {
+
+         }
+     ?>
+     <a href="index.html">wróć</a>
     </body>
 </html>
