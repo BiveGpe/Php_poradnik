@@ -3,7 +3,7 @@
      
      session_destroy(); // Usuwa sesje
 
-     echo "zostałeś wylogowany<br>";
+     echo "Sesja została zakończona<br>";
 ?>
 
-<a href="sesja1.php"><br>wróć</a>
+<a href="sesja.php"><br>wróć</a>
