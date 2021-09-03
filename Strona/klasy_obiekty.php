@@ -11,7 +11,7 @@
     <h1>Klasy i Obiekty</h1>
 
     <?php
-        class Osoba // class nazwa_klasy {KOD} 
+        class Osoba1 // class nazwa_klasy {KOD} 
         {
             public $imie; // Atrybuty klasy
             public $wiek; // Zakres public
@@ -23,12 +23,12 @@
             }
         }
 
-        $osoba1 = new Osoba(); // Stworzenie obiektu - $Nazwa_Obiektu = new Nazwa_klasy(); - używamy nawiasów ponieważ wywołujemy konstruktor klasy 
+        $osoba1 = new Osoba1(); // Stworzenie obiektu - $Nazwa_Obiektu = new Nazwa_klasy(); - używamy nawiasów ponieważ wywołujemy konstruktor klasy 
         $osoba1->imie = "Wiktor"; // Przypisanie atrybutą wartości
         $osoba1->wiek = 19;
         $osoba1->opis(); // Wywołanie metody opis obiektu $osoba1 klasy Osoba
 
-        $osoba2 = new Osoba(); // Drugi obiekt z tej samej klasy 
+        $osoba2 = new Osoba1(); // Drugi obiekt z tej samej klasy 
         $osoba2->imie = "Marek";
         $osoba2->wiek = 13;
         $osoba2->opis(); 
